@@ -1,0 +1,428 @@
+/* ===========================
+   RESET & BASE
+=========================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #222;
+  background: #fff;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===========================
+   BOTÃO
+=========================== */
+.btn {
+  display: inline-block;
+  padding: 7px 18px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn--roxo {
+  background: #6a0dad;
+  color: #fff;
+}
+
+.btn--roxo:hover {
+  background: #4b0082;
+}
+
+/* ===========================
+   TÍTULO DE SEÇÃO 
+=========================== */
+.secao-titulo {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 24px 0 20px;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+.header {
+  background: #0b1a3a;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.header__logo {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.header__nav {
+  display: flex;
+  gap: 4px;
+}
+
+.header__nav a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+
+.header__nav a:hover {
+  color: #a855f7;
+  border-color: #a855f7;
+  background: rgba(168, 85, 247, 0.08);
+}
+
+/* ===========================
+   BANNER PRINCIPAL
+=========================== */
+.banner {
+  width: 100%;
+  height: 700px;
+  background: url('../html/image/banner1.jpg') center/cover no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===========================
+   SOBRE A BIBLIOTECA
+=========================== */
+.sobre {
+  background: #191970;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.sobre .secao-titulo {
+  color: #f0f0f0;
+}
+
+.sobre__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
+  align-items: start;
+}
+
+.sobre__texto p {
+  color: #f0f0f0;
+  margin-bottom: 12px;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.sobre__img-wrap .ph-box {
+  height: 100px;
+}
+
+.sobre__img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.sobre__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.sobre__card {
+  background: #ccc;
+  height: 150px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.sobre__card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===========================
+   BANNER INTERMEDIÁRIO
+=========================== */
+.banner-mid {
+  width: 100%;
+  height: 600px;
+  background: url('../html/image/banner2.avif') center/cover no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===========================
+   NOSSOS LIVROS
+=========================== */
+.livros {
+  background: #4B0082;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.livros .secao-titulo {
+  color: #fff;
+}
+
+.livros__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.livro-card {
+  background: #483D8B;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 320px;
+}
+
+.livro-card__header {
+  background: #483D8B;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 10px 14px;
+  text-align: center;
+}
+
+.livro-card__img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
+}
+
+.livro-card__body {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+  align-items: center;
+  text-align: center;
+}
+
+.livro-card__body p {
+  font-size: 14px;
+  color: #eee;
+  line-height: 1.6;
+  flex: 1;
+}
+
+/* ===========================
+   AS UNIDADES
+=========================== */
+.unidades {
+  background: #0a0a0a;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.unidades .secao-titulo {
+  color: #fff;
+}
+
+.unidade {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 30px;
+  align-items: flex-start;
+}
+
+.unidade:last-child {
+  margin-bottom: 0;
+}
+
+.unidade__img-wrap {
+  flex-shrink: 0;
+  width: 280px;
+}
+
+.unidade__img {
+  width: 280px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}
+
+.unidade__texto h3 {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.unidade__texto p {
+  color: #bbb;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ===========================
+   CONTATOS
+=========================== */
+.contatos {
+  background: #008080;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.contatos .secao-titulo {
+  color: #f0f0f0;
+}
+
+.contatos__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.contatos__texto p {
+  color: #f0f0f0;
+  font-size: 15px;
+  margin-bottom: 12px;
+  line-height: 1.7;
+}
+
+.contatos__img-wrap .ph-box {
+  height: 160px;
+}
+
+.contatos__img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+.footer {
+  background: #000;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footer p {
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* ===========================
+   RESPONSIVIDADE
+=========================== */
+@media (max-width: 1024px) {
+  .livros__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .header__inner {
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    height: auto;
+    padding: 12px 20px;
+  }
+
+  .header { height: auto; }
+
+  .header__nav {
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sobre__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sobre__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contatos__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .unidade {
+    flex-direction: column;
+  }
+
+  .unidade__img-wrap {
+    width: 100%;
+  }
+
+  .unidade__img-wrap .ph-box {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .livros__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sobre__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .banner { height: 200px; }
+  .banner-mid { height: 160px; }
+
+  .container { padding: 0 14px; }
+}
